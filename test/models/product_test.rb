@@ -5,8 +5,7 @@ class ProductTest < ActiveSupport::TestCase
   #   assert true
   # end
   # 
-  test "product atrributes must not be empty"
-  do
+  test "product atrributes must not be empty" do
   	product = Product.new
   	assert product.invalid?
   	assert product.errors[:title].any?
